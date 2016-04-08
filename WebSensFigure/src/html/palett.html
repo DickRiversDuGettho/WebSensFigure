@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="../plugin/fabric.js-1.4.0/dist/all.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="../css/css1.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Sens Figuré</title>
+</head>
+<body>
+<section>
+    <label>
+        <span>Angle :</span>
+        <input id="angleControl" type="range" value="0" min="0" max="360" />
+    </label>
+
+    <label>
+        <span id="petitLabel">Left :</span>
+        <input id="leftControl" type="range" value="0" min="0" max="900" />
+    </label>
+
+    <label>
+        <span>Top :</span>
+        <input id="topControl" type="range" value="0" min="0" max="600" />
+    </label>
+
+    <label>
+        <span>Forms :</span>
+        <input id="formControl" type="range" value="0" min="0" max="100" />
+    </label>
+    <ul hidden>
+        <li>
+            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                    <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="250.75" cy="250" r="100"/>
+                    </svg>
+        </li>
+        <!-- <li>
+                             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="250.75" cy="250" r="100"/>
+                             </svg>
+                         </li>
+
+                         <li>
+                             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="250.75" cy="250" r="100"/>
+                             </svg>
+                         </li>
+                         <li>
+                             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="249.5" cy="250" r="100"/>
+                                 <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M349.5,250c0,110.457-89.543,200-200,200"/>
+                             </svg>
+                         </li>
+                         <li> <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="249.5" cy="300" r="100"/>
+                                 <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M150,100c0-27.614,22.386-50,50-50s50,22.386,50,50
+                                     s22.386,50,50,50s50-22.386,50-50"/>
+                             </svg>
+                         </li>
+                         <li><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                     <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="251" cy="150" r="100"/>
+                                     <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="150,300 350,300 250,450 "/>
+                             </svg>
+                         </li>
+                         <li><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                     <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="251" cy="100" r="50"/>
+                                     <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="150,200 350,200 250,450 "/>
+                             </svg>
+                          </li>
+                         <li><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="100,100 250,212.5 400,100 250,400 "/>
+                             </svg>
+                         </li>
+                         <li> <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="150,300 350,300 250,450 "/>
+                                 <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="350,200 150,200 250,50 "/>
+                             </svg>
+                         </li>
+                         <li>
+                             <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                     <line stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.027" y1="150" x2="350.027" y2="150"/>
+                                     <line stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.027" y1="250" x2="350.027" y2="250"/>
+                                     <line stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.027" y1="350" x2="350.027" y2="350"/>
+                             </svg>
+                         </li>
+                         <li>
+                                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                      width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                         <polyline fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="250.027,350 350.027,150 150.027,150
+                                             250.027,350 "/>
+                                         <line stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.027" y1="250" x2="350.027" y2="250"/>
+                                         <line stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.027" y1="350" x2="350.027" y2="350"/>
+                                 </svg>
+                         </li>
+                         <li>
+                                     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                     <polyline fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="150.027,250 150.027,100 300.027,100
+                                         200.027,250 300.027,250 200.027,400 "/>
+                                     </svg>
+                         </li>
+                         <li>
+                             <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                     <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="250.007" y1="150" x2="250.007" y2="350"/>
+                                     <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="150.007" y1="250" x2="350.007" y2="250"/>
+                                     <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="179.298" y1="320.711" x2="320.718" y2="179.29"/>
+                                     <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="320.718" y1="320.709" x2="179.296" y2="179.289"/>
+                             </svg>
+                         </li>
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500.001px" height="500px" viewBox="0 0 500.001 500" enable-background="new 0 0 500.001 500" xml:space="preserve">
+                             <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="250.007" y1="50" x2="250.007" y2="200"/>
+                             <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="175.007" y1="125" x2="325.007" y2="125"/>
+                             <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="196.976" y1="178.034" x2="303.04" y2="71.967"/>
+                             <line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="303.04" y1="178.032" x2="196.974" y2="71.967"/>
+                             <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="175.009,250 325.007,250 250.005,450 "/>
+                         </svg>
+
+                         </li>
+
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                             <polygon fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="49.973,250 249.973,100 449.973,250
+                                 249.973,400 "/>
+                         </svg>
+
+
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                         <polyline fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="99.975,400 99.975,100 399.975,100
+                             399.975,400 199.975,400 199.975,200 "/>
+                         </svg>
+
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                         <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M165,100c110.457,0,175,83.293,175,193.75
+                             c0,63.159-29.277,119.597-75,156.25c-45.723-36.652-74.998-93.09-74.999-156.25C190.001,183.293,254.545,100,365,100"/>
+                         </svg>
+
+
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                             <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M250,43.75c-24.178,16.827-37.5,39.513-37.5,75
+                                 c0,31.58,14.638,56.674,37.5,75c22.861-18.326,37.5-43.42,37.5-75C287.5,83.263,274.177,60.577,250,43.75z"/>
+                             <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M456.277,250c-16.827-24.178-39.513-37.5-75-37.5
+                                 c-31.58,0-56.674,14.638-75,37.5c18.326,22.861,43.42,37.5,75,37.5C416.765,287.5,439.45,274.177,456.277,250z"/>
+                             <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M250,456.25c24.178-16.827,37.5-39.513,37.5-75
+                                 c0-31.58-14.638-56.674-37.5-75c-22.861,18.326-37.5,43.42-37.5,75C212.5,416.737,225.823,439.423,250,456.25z"/>
+                             <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M43.777,250c16.827,24.178,39.513,37.5,75,37.5
+                                 c31.58,0,56.674-14.638,75-37.5c-18.326-22.861-43.42-37.5-75-37.5C83.29,212.5,60.604,225.823,43.777,250z"/>
+                             <circle fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="250" cy="250" r="50"/>
+                         </svg>
+
+
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                             <polyline fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="100.027,300 150.027,200 200.027,300
+                                 250.027,200 300.027,300 350.027,200 400.027,300 "/>
+                         </svg>
+
+
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M50,350c0-110.457,89.543-200,200-200
+                             s200,89.543,200,200H50z"/>
+                         </svg>
+
+
+                         </li>
+
+                         <li>
+
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                 <rect x="100.11" y="100" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" width="300" height="300"/>
+                         </svg>
+                         </li>
+
+                         <li>
+                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                             <polyline fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" points="200.11,400 100.11,400 100.11,100
+                             400.11,100 400.11,400 300.11,400 "/>
+                         </svg>
+
+
+                         </li> -->
+    </ul>
+     <TABLE BORDER>
+        <TR>
+            <TD><canvas id="canvas" width="900" height="600"></canvas></TD>
+            <TD><ul id ="ulReception">
+            </ul></TD>
+        </TR>
+    </TABLE>
+</section>
+
+</body>
+</html>
